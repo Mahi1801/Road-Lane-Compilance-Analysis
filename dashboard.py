@@ -29,7 +29,7 @@ LANE_LABELS = {1:"Lane 1 - Cyclist", 2:"Lane 2 - Bikes",
                3:"Lane 3 - Cars",    4:"Lane 4 - Trucks"}
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.title("🚦 India Road Lane Discipline Analysis")
+st.title("🚦 Indian Road Lane Discipline Analysis")
 st.caption("Real-time lane violation detection and traffic congestion analysis")
 st.divider()
 
@@ -200,4 +200,4 @@ st.dataframe(top, use_container_width=True)
 with st.expander("View Raw Log Data (last 500 rows)"):
     st.dataframe(df.tail(500), use_container_width=True)
 
-st.caption("India Road Lane Discipline Analysis | Built with YOLOv8 + DeepSORT + Streamlit")
+st.caption("Indian Road Lane Discipline Analysis | Built with YOLOv8 + DeepSORT + Streamlit")

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>India Lane Analytics Report</title>
+<style>
+  body      { font-family: Arial, sans-serif; max-width: 1000px;
+               margin: 40px auto; color: #222; padding: 0 20px; }
+  h1        { color: #c0392b; border-bottom: 3px solid #c0392b; padding-bottom: 10px; }
+  h2        { color: #2c3e50; margin-top: 36px; border-left: 4px solid #c0392b;
+               padding-left: 12px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+               margin: 24px 0; }
+  .kpi      { background: #f8f9fa; border-radius: 10px; padding: 20px;
+               text-align: center; border: 1px solid #dee2e6; }
+  .kpi .num { font-size: 2.2em; font-weight: bold; color: #c0392b; }
+  .kpi .lbl { font-size: 0.85em; color: #666; margin-top: 6px; }
+  table     { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th        { background: #2c3e50; color: white; padding: 10px 14px;
+               text-align: left; }
+  td        { padding: 9px 14px; border-bottom: 1px solid #eee; }
+  tr:hover  { background: #f5f5f5; }
+  .footer   { margin-top: 48px; color: #999; font-size: 0.8em;
+               border-top: 1px solid #eee; padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>🚦 India Road Lane Discipline — Analytics Report</h1>
+<p>Computer vision based analysis of lane violations and their
+   correlation with traffic congestion on Indian roads.</p>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="num">185</div>
+    <div class="lbl">Total Vehicles</div></div>
+  <div class="kpi"><div class="num">448</div>
+    <div class="lbl">Frames Analysed</div></div>
+  <div class="kpi"><div class="num">62</div>
+    <div class="lbl">Violating Vehicles</div></div>
+  <div class="kpi"><div class="num">33.5%</div>
+    <div class="lbl">Overall Violation Rate</div></div>
+</div>
+
+<h2>Violation Rate by Lane</h2>
+<table>
+  <tr><th>Lane</th><th>Total Vehicles</th>
+      <th>Violators</th><th>Violation Rate</th></tr>
+  
+    <tr>
+        <td>Lane 1 - Cyclist</td>
+        <td>3</td>
+        <td>3</td>
+        <td style="color:#e74c3c; font-weight:bold">100.0%</td>
+    </tr>
+    <tr>
+        <td>Lane 2 - Bikes</td>
+        <td>16</td>
+        <td>14</td>
+        <td style="color:#e74c3c; font-weight:bold">87.5%</td>
+    </tr>
+    <tr>
+        <td>Lane 3 - Cars</td>
+        <td>27</td>
+        <td>20</td>
+        <td style="color:#e74c3c; font-weight:bold">74.1%</td>
+    </tr>
+    <tr>
+        <td>Lane 4 - Trucks</td>
+        <td>36</td>
+        <td>36</td>
+        <td style="color:#e74c3c; font-weight:bold">100.0%</td>
+    </tr>
+</table>
+
+<h2>Violation Rate by Vehicle Type</h2>
+<table>
+  <tr><th>Category</th><th>Total Vehicles</th>
+      <th>Violators</th><th>Violation Rate</th></tr>
+  
+    <tr>
+        <td>bike</td>
+        <td>26</td>
+        <td>9</td>
+        <td style="color:#e67e22; font-weight:bold">34.6%</td>
+    </tr>
+    <tr>
+        <td>car</td>
+        <td>149</td>
+        <td>39</td>
+        <td style="color:#e67e22; font-weight:bold">26.2%</td>
+    </tr>
+    <tr>
+        <td>truck</td>
+        <td>68</td>
+        <td>20</td>
+        <td style="color:#e67e22; font-weight:bold">29.4%</td>
+    </tr>
+</table>
+
+<h2>Top 15 Violating Vehicles</h2>
+<table>
+  <tr><th>Track ID</th><th>Category</th><th>Violation Frames</th></tr>
+  
+    <tr>
+        <td>90</td>
+        <td>car</td>
+        <td>93</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>car</td>
+        <td>88</td>
+    </tr>
+    <tr>
+        <td>208</td>
+        <td>truck</td>
+        <td>87</td>
+    </tr>
+    <tr>
+        <td>179</td>
+        <td>truck</td>
+        <td>82</td>
+    </tr>
+    <tr>
+        <td>72</td>
+        <td>car</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>66</td>
+        <td>truck</td>
+        <td>76</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>car</td>
+        <td>75</td>
+    </tr>
+    <tr>
+        <td>135</td>
+        <td>car</td>
+        <td>69</td>
+    </tr>
+    <tr>
+        <td>239</td>
+        <td>car</td>
+        <td>66</td>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>car</td>
+        <td>62</td>
+    </tr>
+    <tr>
+        <td>216</td>
+        <td>truck</td>
+        <td>61</td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>truck</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>236</td>
+        <td>truck</td>
+        <td>58</td>
+    </tr>
+    <tr>
+        <td>162</td>
+        <td>car</td>
+        <td>57</td>
+    </tr>
+    <tr>
+        <td>279</td>
+        <td>car</td>
+        <td>56</td>
+    </tr>
+</table>
+
+<h2>Key Findings</h2>
+<ul>
+  <li>Overall <strong>33.5%</strong> of detected vehicles
+      were in violation of lane rules.</li>
+  <li>Total of <strong>62</strong> unique vehicles
+      recorded violating lane discipline.</li>
+  <li>Analysis based on <strong>448</strong> video frames
+      with YOLOv8 + DeepSORT tracking.</li>
+</ul>
+
+<div class="footer">
+  Generated by India Lane Analytics Pipeline |
+  YOLOv8 + DeepSORT + OpenCV + Python
+</div>
+</body>
+</html>
